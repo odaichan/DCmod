@@ -30,8 +30,8 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(带长的测试mod.MODID)
-public class 带长的测试mod {
+@Mod(DaiChangMod.MODID)
+public class DaiChangMod {
 
     // Define mod id in a common place for everything to reference
     public static final String MODID = "dcmod";
@@ -61,7 +61,7 @@ public class 带长的测试mod {
             output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
             }).build());
 
-    public 带长的测试mod() {
+    public DaiChangMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the commonSetup method for modloading
